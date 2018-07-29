@@ -51,7 +51,7 @@ class BackgroundTimer {
 	};
 
 	backgroundClockMethod(callback, delay) {
-		this.backgroundTimer = setTimeout(() => {
+		this.backgroundTimer = this.setTimeout(() => {
 	    	callback();
 	    	this.backgroundClockMethod(callback, delay);
 	    }, 
